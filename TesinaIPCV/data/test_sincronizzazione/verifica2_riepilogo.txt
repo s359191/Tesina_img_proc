@@ -1,0 +1,15 @@
+Test T05 'verifica2' - 2026-11-11 12:21 - 100 cambi dello schermo
+
+Redmi: cambi misurati 100 su 100, zona 25% dell'immagine, centro della zona al 66% dell'altezza, ritardo medio sulla griglia 130 ms
+  durante la misura: 29.95 fps, intervalli oltre 50 ms 10.1%, luminosità della zona da 19 a 217
+S20FE: cambi misurati 100 su 100, zona 44% dell'immagine, centro della zona al 56% dell'altezza, ritardo medio sulla griglia 119 ms
+  durante la misura: 30.00 fps, intervalli oltre 50 ms 0.4%, luminosità della zona da 32 a 232
+Media della differenza per verso: verso il bianco +11.1 ms, verso il nero +11.5 ms
+Media della differenza per quarti della misura: +12.2  +13.1  +12.8  +7.1 ms
+
+Differenza Redmi - S20FE sulla griglia, su 100 cambi:
+  media +11.3 ms, incertezza ±1.7 ms, dev.std 14.8 ms
+  (la dev.std dipende dallo sfasamento tra le griglie: da 0 a 16.7 ms; molto di più indica una griglia instabile)
+Correzione salvata il 2026-11-11, seconda prova: +9.9 ms (±1.1)
+  residuo dopo la correzione: +1.4 ms  (entro ±3 ms: sì)
+ESITO VERIFICA T05: SUPERATO

@@ -1,0 +1,30 @@
+Test T02 'griglia' - 2026-11-11 10:34 - 600 s
+
+Redmi: 17974 fotogrammi in 600 s -> 29.93 fps medi
+  intervalli: mediana 33.4 ms, 95% sotto 54.7 ms, massimo 103 ms
+  oltre 50 ms: 10.38%   oltre 66 ms: 0.40%   sotto 10 ms: 2.87%   mancanti rispetto a 30 fps: 41
+    < 10 ms (grappolo)     2.87%  #
+    10-25 ms              23.30%  ############
+    25-42 ms (normale)    48.61%  ########################
+    42-58 ms              22.55%  ###########
+    58-75 ms (1 perso)     2.63%  #
+    > 75 ms (2+ persi)     0.04%  
+  griglia: periodo 33.361 ms (stima libera 33.361 ms), ritardo variabile dev.std 9.6 ms, posti vuoti 35
+  T02 (>= 29 fps e oltre 66 ms < 1%): SUPERATO
+
+S20FE: 18002 fotogrammi in 600 s -> 30.00 fps medi
+  intervalli: mediana 33.5 ms, 95% sotto 43.2 ms, massimo 100 ms
+  oltre 50 ms: 0.80%   oltre 66 ms: 0.02%   sotto 10 ms: 0.16%   mancanti rispetto a 30 fps: 1
+    < 10 ms (grappolo)     0.16%  
+    10-25 ms               8.53%  ####
+    25-42 ms (normale)    84.12%  ##########################################
+    42-58 ms               7.10%  ####
+    58-75 ms (1 perso)     0.07%  
+    > 75 ms (2+ persi)     0.02%  
+  griglia: periodo 33.323 ms (stima libera 33.323 ms), ritardo variabile dev.std 5.1 ms, posti vuoti 4
+  T02 (>= 29 fps e oltre 66 ms < 1%): SUPERATO
+
+Coppie: 17932 (29.9/s)
+  scarto sulla griglia: medio 7.9 ms, entro 16.7 ms: 100.0%
+  scarto tra gli arrivi delle stesse coppie: medio 11.7 ms, massimo 81.1 ms
+ESITO T02: SUPERATO

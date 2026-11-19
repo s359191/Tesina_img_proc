@@ -1,0 +1,29 @@
+Calibrazione Redmi - 2026-11-18 18:47 - pattern A3, rotazione orario
+
+
+Immagini usate: 26 su 26   dimensione 720 x 1280
+
+Parametri (valore ± incertezza):
+  fx  =   882.1493  ± 5.6951
+  fy  =   880.6617  ± 5.8130
+  cx  =   356.0230  ± 3.9606
+  cy  =   645.3672  ± 3.3494
+  k1  =    -0.0001  ± 0.0099
+  k2  =     0.1584  ± 0.0366
+  p1  =    -0.0005  ± 0.0009
+  p2  =     0.0004  ± 0.0012
+  k3  =    -0.3389  ± 0.0504
+
+Controlli del test T06:
+  OK  RMS di riproiezione                0.346 px                     criterio: < 0.5 px (accettabile < 1.0)
+  OK  fx / fy                            1.0017                       criterio: 1 ± 0.01
+  OK  punto principale                   (356.0, 645.4)               criterio: entro il 5% dal centro (360, 640)
+  OK  incertezza della focale            ± 5.70 / 5.81 px             criterio: < 1.0% della focale
+  OK  copertura dell'immagine            83% delle celle, 4/4 angoli  criterio: >= 70% e 4/4 angoli
+  OK  immagini inclinate oltre 20 gradi  5 su 26                      criterio: >= 5
+
+Errore per immagine: mediana 0.266 px, massimo 0.688 px (img_005.png)
+Inclinazioni: da 2 a 42 gradi
+
+Salvati: data\calibrazione\Redmi.yaml, data\calibrazione\Redmi_errori.csv, data\calibrazione\Redmi_confronto.png (sinistra originale, destra corretta)
+ESITO T06 Redmi: SUPERATO

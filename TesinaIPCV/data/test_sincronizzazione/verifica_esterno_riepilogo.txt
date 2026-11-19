@@ -1,0 +1,15 @@
+Test T05 'verifica_esterno' - 2026-11-11 13:59 - 91 cambi del dispositivo esterno
+
+Redmi: cambi misurati 91 su 91, zona 0.2% dell'immagine, centro della zona al 49% della larghezza e al 48% dell'altezza, (lampeggio esterno: ritardo assoluto non misurabile)
+  durante la misura: 29.90 fps, intervalli oltre 50 ms 10.3%, luminosità della zona da 9 a 227
+S20FE: cambi misurati 91 su 91, zona 0.3% dell'immagine, centro della zona al 53% della larghezza e al 54% dell'altezza, (lampeggio esterno: ritardo assoluto non misurabile)
+  durante la misura: 29.98 fps, intervalli oltre 50 ms 0.6%, luminosità della zona da 55 a 242
+Media della differenza per verso: verso il bianco +15.7 ms, verso il nero +8.9 ms
+Media della differenza per quarti della misura: +11.1  +16.0  +9.5  +12.4 ms
+
+Differenza Redmi - S20FE sulla griglia, su 91 cambi:
+  media +12.3 ms, incertezza ±1.4 ms, dev.std 13.8 ms
+  (la dev.std dipende dallo sfasamento tra le griglie: da 0 a 16.7 ms; molto di più indica una griglia instabile)
+Correzione salvata il 2026-11-11 13:56: +14.2 ms (±1.0)
+  residuo dopo la correzione: -1.9 ms  (entro ±3 ms: sì)
+ESITO VERIFICA T05: SUPERATO

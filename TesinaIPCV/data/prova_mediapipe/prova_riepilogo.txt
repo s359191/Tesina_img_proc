@@ -1,0 +1,45 @@
+Prova di MediaPipe 1.2.2 - 2026-11-18 19:21 - 60 coppie
+
+Modello lite:
+  tempo per immagine: mediana 10 ms, 95% sotto 13 ms  -> circa 48 coppie al secondo elaborando le due immagini una dopo l'altra
+  persona trovata: Redmi 60/60, S20FE 60/60
+  errore di riproiezione delle articolazioni visibili: mediana 3.1 px, 90% sotto 6.3 px
+  lunghezza delle ossa (media e variazione nel tempo, dev. std):
+    braccio sinistro        28.0 cm   ±  0.8 cm   (60 coppie)
+    braccio destro          28.2 cm   ±  0.5 cm   (60 coppie)
+    avambraccio sinistro    23.8 cm   ±  0.7 cm   (60 coppie)
+    avambraccio destro      24.1 cm   ±  1.2 cm   (60 coppie)
+    coscia sinistra         36.7 cm   ±  0.6 cm   (60 coppie)
+    coscia destra           36.4 cm   ±  0.2 cm   (60 coppie)
+    gamba sinistra          35.3 cm   ±  0.7 cm   (60 coppie)
+    gamba destra            35.8 cm   ±  0.5 cm   (60 coppie)
+
+Modello full:
+  tempo per immagine: mediana 14 ms, 95% sotto 17 ms  -> circa 36 coppie al secondo elaborando le due immagini una dopo l'altra
+  persona trovata: Redmi 60/60, S20FE 60/60
+  errore di riproiezione delle articolazioni visibili: mediana 3.2 px, 90% sotto 5.7 px
+  lunghezza delle ossa (media e variazione nel tempo, dev. std):
+    braccio sinistro        27.7 cm   ±  0.6 cm   (60 coppie)
+    braccio destro          27.7 cm   ±  0.3 cm   (60 coppie)
+    avambraccio sinistro    22.4 cm   ±  0.5 cm   (60 coppie)
+    avambraccio destro      24.0 cm   ±  0.9 cm   (60 coppie)
+    coscia sinistra         36.7 cm   ±  0.7 cm   (59 coppie)
+    coscia destra           35.9 cm   ±  0.4 cm   (60 coppie)
+    gamba sinistra          35.7 cm   ±  0.6 cm   (59 coppie)
+    gamba destra            35.8 cm   ±  0.5 cm   (60 coppie)
+
+Modello heavy:
+  tempo per immagine: mediana 40 ms, 95% sotto 48 ms  -> circa 12 coppie al secondo elaborando le due immagini una dopo l'altra
+  persona trovata: Redmi 60/60, S20FE 60/60
+  errore di riproiezione delle articolazioni visibili: mediana 2.9 px, 90% sotto 6.4 px
+  lunghezza delle ossa (media e variazione nel tempo, dev. std):
+    braccio sinistro        27.5 cm   ±  0.5 cm   (60 coppie)
+    braccio destro          27.9 cm   ±  0.6 cm   (60 coppie)
+    avambraccio sinistro    22.4 cm   ±  0.7 cm   (60 coppie)
+    avambraccio destro      24.2 cm   ±  0.9 cm   (60 coppie)
+    coscia sinistra         37.9 cm   ±  0.2 cm   (60 coppie)
+    coscia destra           37.5 cm   ±  0.5 cm   (60 coppie)
+    gamba sinistra          35.5 cm   ±  0.3 cm   (60 coppie)
+    gamba destra            36.6 cm   ±  0.4 cm   (60 coppie)
+
+Immagini con le articolazioni disegnate: data\prova_mediapipe\articolazioni_<modello>.jpg

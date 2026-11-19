@@ -1,0 +1,20 @@
+%YAML 1.2
+---
+camera: S20FE
+data: "2026-11-18 16:30"
+ripristinata_da: "data\\calibrazione\\stereo.yaml (2026-11-18 15:31)"
+larghezza: 720
+altezza: 1280
+rotazione: orario
+K: !!opencv-matrix
+   rows: 3
+   cols: 3
+   dt: d
+   data: [ 975.88606900846821, 0., 363.14182166106519, 0.,
+       974.82851420528095, 640.68485966536423, 0., 0., 1. ]
+dist: !!opencv-matrix
+   rows: 1
+   cols: 5
+   dt: d
+   data: [ 0.067856345786069402, -0.12115295603547001,
+       0.001623796165247966, 0.0035851728804224994, 0.1370260078533751 ]

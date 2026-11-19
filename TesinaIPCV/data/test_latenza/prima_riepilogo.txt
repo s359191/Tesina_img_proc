@@ -1,0 +1,16 @@
+Test T04 'prima' - 2026-11-11 11:02 - 60 cambi dello schermo
+
+Redmi: 1870 fotogrammi, zona dello schermo 38% dell'immagine, cambi misurati 60 su 60
+  latenza (arrivo - cambio):   media 126 ms, mediana 127 ms, 95% sotto 145 ms, min 102 ms, max 153 ms
+  istante sulla griglia - cambio: media 128 ms
+  T04 (latenza media <= 200 ms): SUPERATO
+
+S20FE: 1871 fotogrammi, zona dello schermo 45% dell'immagine, cambi misurati 60 su 60
+  latenza (arrivo - cambio):   media 121 ms, mediana 122 ms, 95% sotto 139 ms, min 85 ms, max 147 ms
+  istante sulla griglia - cambio: media 121 ms
+  T04 (latenza media <= 200 ms): SUPERATO
+
+Differenza Redmi - S20FE su 60 cambi (anticipo della fase 3):
+  sulla griglia: media +7.2 ms (incertezza ±1.6 ms), dev.std 12.0 ms
+  sugli arrivi:  media +4.9 ms, dev.std 14.8 ms
+ESITO T04: SUPERATO

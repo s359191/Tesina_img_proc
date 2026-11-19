@@ -1,0 +1,9 @@
+Verifica della verticale del sistema del pavimento (T13) - 2026-11-18 18:10
+
+Criterio: pattern contro un muro verticale, inclinazione 90 ± 1.0 gradi
+
+  1. centro in (-0.10, +0.30) m a 0.97 m da terra: inclinazione 89.70 gradi (scarto da 90: -0.30)   OK
+  2. centro in (+0.60, +0.26) m a 0.97 m da terra: inclinazione 89.73 gradi (scarto da 90: -0.27)   OK
+  3. centro in (-0.84, +0.28) m a 0.97 m da terra: inclinazione 89.40 gradi (scarto da 90: -0.60)   OK
+
+ESITO verticale T13: SUPERATO

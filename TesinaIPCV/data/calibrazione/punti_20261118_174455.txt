@@ -1,0 +1,28 @@
+Misura punti - 2026-11-18 17:44 - 5 punti
+
+Calibrazione 'focali affinate':
+  punto 1: (+0.108, +1.018, +3.233) m, errore epipolare 3.1 px   <- i due clic forse non sono lo stesso punto
+  punto 2: (-0.562, +0.982, +3.580) m, errore epipolare 3.7 px   <- i due clic forse non sono lo stesso punto
+  punto 3: (+0.412, +0.907, +3.920) m, errore epipolare 3.7 px   <- i due clic forse non sono lo stesso punto
+  punto 4: (+0.784, +1.053, +2.904) m, errore epipolare 2.9 px
+  punto 5: (-0.180, +1.129, +2.541) m, errore epipolare 3.1 px   <- i due clic forse non sono lo stesso punto
+Calibrazione 'intrinseci fissi':
+  punto 1: (+0.114, +1.016, +3.256) m, errore epipolare 3.4 px   <- i due clic forse non sono lo stesso punto
+  punto 2: (-0.553, +0.979, +3.603) m, errore epipolare 3.5 px   <- i due clic forse non sono lo stesso punto
+  punto 3: (+0.418, +0.903, +3.940) m, errore epipolare 3.7 px   <- i due clic forse non sono lo stesso punto
+  punto 4: (+0.789, +1.052, +2.929) m, errore epipolare 3.6 px   <- i due clic forse non sono lo stesso punto
+  punto 5: (-0.174, +1.128, +2.565) m, errore epipolare 4.1 px   <- i due clic forse non sono lo stesso punto
+
+Distanze tra i punti (m):
+  punti      focali affinate  intrinseci fissi      metro
+  1-2                  0.755             0.753      ______
+  1-3                  0.760             0.757      ______
+  1-4                  0.753             0.751      ______
+  1-5                  0.758             0.757      ______
+  2-3                  1.034             1.030      ______
+  2-4                  1.508             1.503      ______
+  2-5                  1.117             1.115      ______
+  3-4                  1.092             1.087      ______
+  3-5                  1.517             1.513      ______
+  4-5                  1.032             1.033      ______
+Scrivi nella colonna 'metro' le distanze misurate sul pavimento e confrontale.

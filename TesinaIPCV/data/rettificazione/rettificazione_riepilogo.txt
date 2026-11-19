@@ -1,0 +1,14 @@
+Rettificazione - 2026-11-18 18:57 - calibrazione stereo del 2026-11-18 18:55
+
+Rotazioni virtuali: camera 1 26.6 gradi, camera 2 22.3 gradi
+Immagini rettificate: focale 576.4 px, riga del centro ottico 550.3, colonna 705.2 (camera 1) e 59.1 (camera 2)
+
+Scarto verticale tra gli stessi angoli nelle due immagini rettificate:
+  coppie di calibrazione  27 coppie,  570 angoli: medio 0.318 px, 95% sotto 0.730 px, massimo 1.321 px
+  coppie di verifica       6 coppie,  124 angoli: medio 0.577 px, 95% sotto 1.727 px, massimo 2.197 px
+
+Controllo del test T09:
+  OK  scarto verticale medio, coppie di verifica   0.577 px   criterio: <= 1.0 px
+
+Salvati in data\rettificazione: rettificazione_per_coppia.csv e le immagini rettificate delle coppie di verifica
+ESITO T09: SUPERATO

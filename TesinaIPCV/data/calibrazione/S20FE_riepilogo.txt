@@ -1,0 +1,30 @@
+Calibrazione S20FE - 2026-11-18 18:51 - pattern A3, rotazione orario
+
+
+Immagini usate: 30 su 30   dimensione 720 x 1280
+
+Parametri (valore ± incertezza):
+  fx  =   962.9952  ± 4.5098
+  fy  =   963.5231  ± 4.5361
+  cx  =   342.3496  ± 3.7151
+  cy  =   634.6059  ± 3.7332
+  k1  =     0.0411  ± 0.0094
+  k2  =    -0.0744  ± 0.0351
+  p1  =    -0.0029  ± 0.0010
+  p2  =    -0.0019  ± 0.0011
+  k3  =     0.0534  ± 0.0464
+
+Controlli del test T06:
+  OK  RMS di riproiezione                0.325 px                     criterio: < 0.5 px (accettabile < 1.0)
+  OK  fx / fy                            0.9995                       criterio: 1 ± 0.01
+  OK  punto principale                   (342.3, 634.6)               criterio: entro il 5% dal centro (360, 640)
+  OK  incertezza della focale            ± 4.51 / 4.54 px             criterio: < 1.0% della focale
+  OK  copertura dell'immagine            93% delle celle, 4/4 angoli  criterio: >= 70% e 4/4 angoli
+  OK  immagini inclinate oltre 20 gradi  8 su 30                      criterio: >= 5
+
+Errore per immagine: mediana 0.248 px, massimo 0.663 px (img_016.png)
+Inclinazioni: da 1 a 46 gradi
+Focale media 963.3 px: +1.2% rispetto ai 952 px nominali (indicativo: la verifica è con il metro, --verifica-distanza)
+
+Salvati: data\calibrazione\S20FE.yaml, data\calibrazione\S20FE_errori.csv, data\calibrazione\S20FE_confronto.png (sinistra originale, destra corretta)
+ESITO T06 S20FE: SUPERATO

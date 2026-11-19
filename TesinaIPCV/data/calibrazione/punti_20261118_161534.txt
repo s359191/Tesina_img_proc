@@ -1,0 +1,22 @@
+Misura punti - 2026-11-18 16:15 - 5 punti
+
+Calibrazione 'intrinseci fissi':
+  punto 1: (+0.093, +1.109, +3.278) m, errore epipolare 36.9 px   <- i due clic forse non sono lo stesso punto
+  punto 2: (-0.581, +1.069, +3.633) m, errore epipolare 42.0 px   <- i due clic forse non sono lo stesso punto
+  punto 3: (+0.399, +1.013, +3.983) m, errore epipolare 38.2 px   <- i due clic forse non sono lo stesso punto
+  punto 4: (+0.771, +1.148, +2.943) m, errore epipolare 36.4 px   <- i due clic forse non sono lo stesso punto
+  punto 5: (-0.198, +1.203, +2.569) m, errore epipolare 39.9 px   <- i due clic forse non sono lo stesso punto
+
+Distanze tra i punti (m):
+  punti     intrinseci fissi      metro
+  1-2                  0.763      0.75
+  1-3                  0.774      0.752
+  1-4                  0.757      0.748
+  1-5                  0.772      0.75
+  2-3                  1.042      1.025
+  2-4                  1.520      1.50
+  2-5                  1.140      1.107
+  3-4                  1.112      1.09
+  3-5                  1.547      1.50
+  4-5                  1.040      102.4
+Scrivi nella colonna 'metro' le distanze misurate sul pavimento e confrontale.

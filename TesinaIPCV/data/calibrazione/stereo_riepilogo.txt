@@ -1,0 +1,34 @@
+Calibrazione stereo - 2026-11-18 18:55 - camera 1 Redmi, camera 2 S20FE
+
+
+Confronto (diagnosi):
+  variante               RMS   err. Redmi   err. S20FE      |T| diff. metro  epipolare verifica   focali Redmi / S20FE
+  intrinseci fissi     0.536        0.492        0.477    2.511      +0.1 cm           0.791 px   881.4 / 963.3
+  focali affinate      0.471        0.421        0.420    2.507      -0.3 cm           0.447 px   878.3 / 962.7
+
+Analisi per coppia, nell'ordine di acquisizione (pose stimate separatamente in ogni camera):
+  coppie      baseline   angolo   err. Redmi   err. S20FE
+  000-007        2.520    49.18         0.49         0.44
+  008-016        2.516    49.15         0.47         0.47
+  017-025        2.497    48.47         0.57         0.55
+  026-032        2.535    49.30         0.43         0.44
+  (un salto netto di angolo o baseline tra un blocco e l'altro indica un telefono mosso)
+  -> si usa: intrinseci fissi  (per usare l'altra: --affina)
+
+Coppie usate: 27 per la calibrazione, 6 per la verifica
+
+Risultato:
+  R (vettore di Rodrigues, gradi): [-6.76, -47.83, -7.71]
+  T (m): [2.3263, -0.1556, 0.9321]
+  centro della camera 2 visto dalla camera 1 (m): [-2.249, -0.183, 1.101]
+  errore epipolare sulle coppie di calibrazione: media 0.460 px
+
+Controlli dei test T07 e T08:
+  OK  RMS stereo                             0.536 px                                         criterio: < 1.0 px
+  OK  lunghezza di T (baseline)              2.511 m (metro 2.510 m, differenza +0.1 cm)      criterio: entro ±2 cm
+  OK  angolo di R                            48.9 gradi                                       criterio: tra 40 e 60 gradi
+  OK  S20FE affiancata a Redmi               x = -2.249 m, y = -0.183 m (a sinistra)          criterio: |x| > |y|
+  OK  errore epipolare, coppie di verifica   media 0.791 px, 95% sotto 2.272                  criterio: media < 1.0 px
+
+Salvato: data\calibrazione\stereo.yaml (variante 'intrinseci fissi'); entrambe le varianti in stereo_fissa.yaml e stereo_affinata.yaml
+ESITO T07 e T08: SUPERATO

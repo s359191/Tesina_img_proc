@@ -1,0 +1,26 @@
+Test T02 'prova' - 2026-11-09 17:11 - 600 s
+
+Redmi: 17973 fotogrammi in 600 s -> 29.93 fps medi
+  intervalli: mediana 33.4 ms, 95% sotto 55.2 ms, massimo 86 ms
+  oltre 50 ms: 11.31%   oltre 66 ms: 0.37%   sotto 10 ms: 3.62%   mancanti rispetto a 30 fps: 41
+    < 10 ms (grappolo)     3.62%  ##
+    10-25 ms              23.73%  ############
+    25-42 ms (normale)    45.87%  #######################
+    42-58 ms              24.08%  ############
+    58-75 ms (1 perso)     2.67%  #
+    > 75 ms (2+ persi)     0.03%  
+  T02 (>= 29 fps e oltre 66 ms < 1%): SUPERATO
+
+S20FE: 18006 fotogrammi in 600 s -> 30.01 fps medi
+  intervalli: mediana 33.4 ms, 95% sotto 42.9 ms, massimo 59 ms
+  oltre 50 ms: 0.34%   oltre 66 ms: 0.00%   sotto 10 ms: 0.04%   mancanti rispetto a 30 fps: 0
+    < 10 ms (grappolo)     0.04%  
+    10-25 ms               8.40%  ####
+    25-42 ms (normale)    84.99%  ##########################################
+    42-58 ms               6.55%  ###
+    58-75 ms (1 perso)     0.01%  
+    > 75 ms (2+ persi)     0.00%  
+  T02 (>= 29 fps e oltre 66 ms < 1%): SUPERATO
+
+Coppie: 16319 (27.2/s), scarto medio 9.3 ms, entro 16.7 ms: 86.3%
+ESITO T02: SUPERATO

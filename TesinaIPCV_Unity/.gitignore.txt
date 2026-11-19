@@ -1,0 +1,33 @@
+# Cartelle che Unity rigenera da sola
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+
+# File dell'editor di codice rigenerati da Unity
+.vs/
+.vscode/
+.idea/
+*.csproj
+*.sln
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+*.tmp
+
+# Pacchetti e build esportati
+*.unitypackage
+*.apk
+*.aab
+sysinfo.txt
+crashlytics-build.properties

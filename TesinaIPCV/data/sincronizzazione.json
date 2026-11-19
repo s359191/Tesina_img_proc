@@ -1,0 +1,13 @@
+{
+  "data": "2026-11-18 19:06",
+  "descrizione": "ritardo costante di ciascuna camera rispetto a S20FE, da sottrarre agli istanti sulla griglia",
+  "correzione_ms": {
+    "Redmi": 18.01,
+    "S20FE": 0.0
+  },
+  "incertezza_ms": 0.93,
+  "dispersione_ms": 13.12,
+  "cambi": 197,
+  "etichetta": "misura",
+  "lampeggio": "esterno"
+}

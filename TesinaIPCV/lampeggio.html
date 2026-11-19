@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lampeggio</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #000; color: #888; font-family: sans-serif; }
+  #schermo { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center;
+             text-align: center; font-size: 22px; line-height: 1.5; user-select: none; }
+</style>
+</head>
+<body>
+<div id="schermo">Luminosità dello schermo al massimo,<br>poi tocca per iniziare.<br>Tocca di nuovo per fermare.</div>
+<script>
+  // Alterna nero e bianco a intervalli casuali tra 0,8 e 1,2 s: casuali perché i cambi devono cadere
+  // in punti qualsiasi tra uno scatto e l'altro delle camere (vedi test_sincronizzazione.py).
+  const schermo = document.getElementById("schermo");
+  let attivo = false, bianco = false, timer = null, blocco = null;
+  function cambia() {
+    bianco = !bianco;
+    document.body.style.background = schermo.style.background = bianco ? "#fff" : "#000";
+    timer = setTimeout(cambia, 800 + Math.random() * 400);
+  }
+  async function avvia() {
+    attivo = true;
+    schermo.textContent = "";
+    try { await document.documentElement.requestFullscreen(); } catch (e) {}
+    try { blocco = await navigator.wakeLock.request("screen"); } catch (e) {}   // schermo sempre acceso
+    cambia();
+  }
+  function ferma() {
+    attivo = false;
+    clearTimeout(timer);
+    bianco = false;
+    document.body.style.background = schermo.style.background = "#000";
+    schermo.innerHTML = "Fermo.<br>Tocca per ricominciare.";
+    if (blocco) { blocco.release(); blocco = null; }
+  }
+  document.addEventListener("click", () => attivo ? ferma() : avvia());
+</script>
+</body>
+</html>

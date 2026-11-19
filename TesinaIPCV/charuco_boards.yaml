@@ -1,0 +1,18 @@
+# Parametri dei pattern stampati (misurati con metro rigido)
+dictionary: DICT_4X4_50
+A3:
+  squares_x: 7
+  squares_y: 5
+  square_length_m: 0.04843   # scala di stampa ~96,9%
+  marker_length_m: 0.0368
+  square_length_x_m: 0.04843
+  square_length_y_m: 0.04860
+  first_id: 0
+A1:
+  squares_x: 7
+  squares_y: 5
+  square_length_m: 0.1097    # scala di stampa ~99,7%
+  marker_length_m: 0.0818    # = 0.1097 × 82/110
+  square_length_x_m: 0.11029
+  square_length_y_m: 0.10980
+  first_id: 17

@@ -1,0 +1,13 @@
+Motion capture - 2026-11-18 20:25 - modello full - dal vivo
+coppie elaborate: 6854, con la persona ricostruita: 6154
+errore di riproiezione: mediana 3.3 px, 90% sotto 7.6 px
+lunghezza delle ossa (media ± dev. std nel tempo):
+  braccio sx        26.4 cm ±  1.9 cm  (4560 coppie)
+  braccio dx        26.4 cm ±  1.9 cm  (5522 coppie)
+  avambraccio sx    22.7 cm ±  2.1 cm  (4411 coppie)
+  avambraccio dx    22.9 cm ±  1.9 cm  (5321 coppie)
+  coscia sx         37.1 cm ±  1.7 cm  (5773 coppie)
+  coscia dx         37.1 cm ±  1.8 cm  (6080 coppie)
+  gamba sx          36.2 cm ±  2.5 cm  (5731 coppie)
+  gamba dx          35.7 cm ±  1.9 cm  (6042 coppie)
+scheletro salvato in data\scheletri\scheletro_20261118_202131.csv

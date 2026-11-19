@@ -1,0 +1,18 @@
+Test T05 'misura' - 2026-11-18 19:06 - 206 cambi del dispositivo esterno
+
+Redmi: cambi misurati 206 su 206, zona 0.3% dell'immagine, centro della zona al 53% della larghezza e al 42% dell'altezza, (lampeggio esterno: ritardo assoluto non misurabile)
+  durante la misura: 29.93 fps, intervalli oltre 50 ms 9.7%, luminosità della zona da 37 a 243
+S20FE: cambi misurati 206 su 206, zona 0.3% dell'immagine, centro della zona al 53% della larghezza e al 49% dell'altezza, (lampeggio esterno: ritardo assoluto non misurabile)
+  durante la misura: 29.99 fps, intervalli oltre 50 ms 0.3%, luminosità della zona da 61 a 245
+Esclusi 8 cambi: griglia di Redmi fuori posto (ritardo medio entro 2 s dal cambio oltre 3 ms, massimo 7 ms)
+Esclusi 1 cambi con differenza lontana più di 1,5 periodi dalla mediana
+Media della differenza per verso: verso il bianco +15.7 ms, verso il nero +20.4 ms
+Media della differenza per quarti della misura: +16.1  +20.5  +18.8  +16.7 ms
+
+Differenza Redmi - S20FE sulla griglia, su 197 cambi:
+  media +18.0 ms, incertezza ±0.9 ms, dev.std 13.1 ms
+  (la dev.std dipende dallo sfasamento tra le griglie: da 0 a 16.7 ms; molto di più indica una griglia instabile)
+Correzione salvata il 2026-11-18 11:21: +15.6 ms (±1.2)
+  residuo dopo la correzione: +2.4 ms  (entro ±3 ms: sì)
+SALVATA in data\sincronizzazione.json: correzione Redmi +18.0 ms
+ESITO MISURA T05: SUPERATO

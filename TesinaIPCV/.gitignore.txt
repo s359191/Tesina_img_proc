@@ -1,0 +1,17 @@
+# ambiente virtuale
+.venv/
+venv/
+
+# file compilati di Python, si rigenerano da soli
+__pycache__/
+*.pyc
+
+# impostazioni personali di PyCharm
+.idea/
+
+# modelli di MediaPipe: prova_mediapipe.py li riscarica da solo
+data/modelli/
+
+# Registrazioni di mocap.py
+# Si condividono con una cartella condivisa (vedi data/LEGGIMI_registrazioni.txt)
+data/registrazioni/

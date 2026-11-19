@@ -1,0 +1,21 @@
+%YAML 1.2
+---
+camera: Redmi
+data: "2026-11-18 16:30"
+ripristinata_da: "data\\calibrazione\\stereo.yaml (2026-11-18 15:31)"
+larghezza: 720
+altezza: 1280
+rotazione: orario
+K: !!opencv-matrix
+   rows: 3
+   cols: 3
+   dt: d
+   data: [ 892.72571043103164, 0., 350.76115126301045, 0.,
+       893.33798255304225, 638.22734862345794, 0., 0., 1. ]
+dist: !!opencv-matrix
+   rows: 1
+   cols: 5
+   dt: d
+   data: [ 0.064091467094145371, -0.14350353399592958,
+       0.00016877951765342103, -0.00033257992192006606,
+       0.10449203626116632 ]
