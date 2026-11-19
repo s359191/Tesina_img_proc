@@ -22,6 +22,10 @@ Uso:
   python mocap.py                                   dal vivo, modello full
   python mocap.py --udp 127.0.0.1:5065              dal vivo, inviando lo scheletro a Unity
   python mocap.py --da data/registrazioni/20261118_193000 --modello heavy
+  python mocap.py --da data/registrazioni/20261118_193000 --modello heavy --nome visibilita03
+                                                    come sopra, ma i file di uscita hanno l'etichetta
+                                                    nel nome (scheletro_heavy_visibilita03.csv): prove
+                                                    diverse sulla stessa registrazione non si sovrascrivono
 Tasti: R = avvia/ferma la registrazione (solo dal vivo)   SPAZIO = pausa   ESC = fine
 """
 import argparse
@@ -269,6 +273,7 @@ def main():
     parser.add_argument("--modello", default="full", choices=("lite", "full", "heavy"))
     parser.add_argument("--da", help="cartella di una registrazione da rielaborare")
     parser.add_argument("--udp", help="indirizzo:porta a cui inviare lo scheletro (Unity), es. 127.0.0.1:5065")
+    parser.add_argument("--nome", help="etichetta aggiunta al nome dei file di uscita, es. visibilita03")
     args = parser.parse_args()
 
     nomi = list(STREAM)
@@ -279,16 +284,20 @@ def main():
     rilevatore = Rilevatore(args.modello)
     udp = InvioUDP(args.udp) if args.udp else None
 
+    # Etichetta facoltativa nel nome dei file: "_visibilita03" con --nome visibilita03, niente senza
+    etichetta = f"_{args.nome}" if args.nome else ""
     acq = None
     if args.da:
         sorgente = coppie_da_registrazione(args.da, nomi)
         os.makedirs(args.da, exist_ok=True)
-        percorso_csv = os.path.join(args.da, f"scheletro_{args.modello}.csv")
+        percorso_csv = os.path.join(args.da, f"scheletro_{args.modello}{etichetta}.csv")
     else:
         acq = AcquisizioneStereo()
         sorgente = coppie_dal_vivo(acq)
         os.makedirs(CARTELLA_SCHELETRI, exist_ok=True)
-        percorso_csv = os.path.join(CARTELLA_SCHELETRI, f"scheletro_{time.strftime('%Y%m%d_%H%M%S')}.csv")
+        percorso_csv = os.path.join(CARTELLA_SCHELETRI, f"scheletro_{time.strftime('%Y%m%d_%H%M%S')}{etichetta}.csv")
+    if os.path.exists(percorso_csv):
+        print(f"ATTENZIONE: {percorso_csv} esiste già e verrà sovrascritto (per tenerlo usa --nome)")
     file_csv = open(percorso_csv, "w", encoding="utf-8", newline="")
     file_csv.write("coppia;t_scena_1;t_scena_2;registrazione;"
                    + ";".join(f"{n}_{a}" for n in NOMI for a in "xyz") + "\n")
@@ -364,7 +373,8 @@ def main():
         cv2.destroyAllWindows()
 
     righe = [f"Motion capture - {time.strftime('%Y-%m-%d %H:%M')} - modello {args.modello}"
-             + (f" - registrazione {args.da}" if args.da else " - dal vivo"),
+             + (f" - registrazione {args.da}" if args.da else " - dal vivo")
+             + (f" - prova '{args.nome}'" if args.nome else ""),
              f"coppie elaborate: {coppie}, con la persona ricostruita: {con_persona}"]
     if tutti_errori:
         righe.append(f"errore di riproiezione: mediana {np.median(tutti_errori):.1f} px, "
